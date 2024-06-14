@@ -1,5 +1,5 @@
 import Image from "next/image";
 
 export default function Home() {
-  return <main>app</main>;
+  return <main className="text-red-500">app</main>;
 }
