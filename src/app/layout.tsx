@@ -9,7 +9,10 @@ import SearchBox from "@/components/SearchBox";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "IMDB clone",
+  title: {
+    default: "IMDB Clone",
+    template: "%s | IMDB",
+  },
   description: "This is a movie database clone",
 };
 

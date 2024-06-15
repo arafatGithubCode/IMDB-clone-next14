@@ -1,6 +1,13 @@
 import Results from "@/components/share/Results";
+import { Metadata } from "next";
 
 const TMDB_API_KEY = process.env.TMDB_API_KEY;
+
+export const metadata: Metadata = {
+  title: {
+    absolute: "Home-IMDB",
+  },
+};
 
 interface HomeProps {
   searchParams: {

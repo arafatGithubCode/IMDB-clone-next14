@@ -1,3 +1,11 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: {
+    absolute: "About-IMDB",
+  },
+};
+
 export default function About() {
   return (
     <div className="max-w-6xl mx-auto p-3 space-y-4">

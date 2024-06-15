@@ -5,6 +5,19 @@ type ParamsProps = {
   params: { id: string };
 };
 
+export const generateMetadata = async ({ params }: ParamsProps) => {
+  const movieId = params.id;
+  const res = await fetch(
+    `https://api.themoviedb.org/3/movie/${movieId}?api_key=${process.env.TMDB_API_KEY}`
+  );
+  const movie: Result = await res.json();
+
+  return {
+    title: movie.title || movie.name,
+    description: movie.overview,
+  };
+};
+
 export default async function MoviePage({ params }: ParamsProps) {
   const movieId = params.id;
   const res = await fetch(
