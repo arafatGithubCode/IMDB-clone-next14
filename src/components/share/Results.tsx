@@ -1,4 +1,4 @@
-import Card from "./share/Card";
+import Card from "./Card";
 import { Result } from "@/types/types";
 interface ResultsProps {
   results: Result[];

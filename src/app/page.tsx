@@ -1,4 +1,4 @@
-import Results from "@/components/Results";
+import Results from "@/components/share/Results";
 
 const TMDB_API_KEY = process.env.TMDB_API_KEY;
 
