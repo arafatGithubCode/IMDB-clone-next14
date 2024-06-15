@@ -7,3 +7,11 @@
     @apply transition-all duration-200 ease-in-out cursor-pointer;
   }
 }
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scrollbar-width: none;
+}
